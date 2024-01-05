@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Fonts: Merriweather-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Try me!</title>
+    <!--Javascript-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function listen()
+            {
+                document.querySelector("form").addEventListener("submit", function greet()
+                    {
+                        let name = document.querySelector("#name").value;
+
+                        if (name == ""){
+                            alert("Type something!");
+                        }
+
+                        else{
+                            alert( "Great" + "!\n" + name +", " +" Alice wish you happy new year "+"!\n" + 
+"May this  year "+"bring new joy "+ ","  + " new   goals  and many more."+ "Thank you for your warm wishes.. Have an amazing New Year 2024." + "\n" + "okay enjoy your celebration!");
+                        }
+                    }
+                );
+            }
+        );
+    </script>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <form onsubmit="return false">
+        <input id="name" type="text" placeholder="Type your name" autocomplete="off" autofocus>
+        <input id="button" type="submit" value="&#128512">
+    </form>
+    <footer>
+        <a href="https://github.com/sshehrozali" alt="sshehrozali-github-link" target="_blank">@ Aliceit</a>
+    </footer>
+</body>
+</html>
